@@ -24,9 +24,20 @@ export const fetchAsyncSeries = createAsyncThunk(
     return response.data;
   }
 );
+
+export const fetchAsyncDetails = createAsyncThunk(
+  "movie/fetchAsyncDetails",
+  async (id) => {
+    const response = await movieapi.get(
+      `?apiKey=${APIKey}&i=${id}&Plot=full`
+    );
+     return response.data;
+  }
+);
 const initialState = {
   movies: {},
   series: {},
+  details:{},
 };
 
 const movieSlice = createSlice({
@@ -52,6 +63,10 @@ const movieSlice = createSlice({
       .addCase(fetchAsyncSeries.fulfilled, (state, { payload }) => {
         console.log("Fetched");
         return { ...state, series: payload };
+      })
+      .addCase(fetchAsyncDetails.fulfilled, (state, { payload }) => {
+        console.log("Fetched");
+        return { ...state, details: payload };
       });
   },
 });
