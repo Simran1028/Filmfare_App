@@ -73,3 +73,7 @@ export const getAllMovies = (state) => state.movies.movies;
 export const getAllSeries = (state) => state.movies.series;
 export const getAllDetails = (state) => state.movies.details;
 export default movieSlice.reducer;
+
+
+
+
