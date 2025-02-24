@@ -8,7 +8,7 @@ import {
   fetchAsyncSeries,
 } from "../../features/movies/movieSlice";
 
-const Header = () => {
+const header = () => {
   const [input, setInput] = useState("");
   const dispatch = useDispatch();
   const submitHandler = (e) => {
@@ -48,4 +48,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default header;
