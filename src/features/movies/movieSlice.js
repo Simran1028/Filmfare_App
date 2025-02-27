@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 // import movieapi from "../../common/apis/movieapi";
-import movieapi from "../../common/apis/movieapi.jsx";
-import { APIKey } from "../../common/apis/movieapikey.jsx";
+import movieapi from "../../../src/common/apis/movieapi.jsx";
+import { APIKey } from "../../../src/common/apis/movieapikey.jsx";
 
 export const fetchAsyncMovies = createAsyncThunk(
   "movie/fetchAsyncMovies",
