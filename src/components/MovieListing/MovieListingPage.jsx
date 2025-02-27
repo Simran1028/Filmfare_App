@@ -2,9 +2,9 @@ import React from "react";
 import { useSelector } from "react-redux";
 import Slider from "react-slick";
 import { getAllMovies, getAllSeries } from "../../features/movies/movieSlice";
-import MovieCard from "../MovieCard/movieCard";
 import "./MovieListing.scss";
 import { settings } from "../../common/settings";
+import MovieCardPage from "../MovieCard/MovieCardPage";
 
 const MovieListingPage = () => {
   const movies = useSelector(getAllMovies);
@@ -14,7 +14,7 @@ const MovieListingPage = () => {
 
   if (movies.Response === "True") {
     renderMovies = movies.Search.map((movie, index) => {
-      return <MovieCard key={index} data={movie} />;
+      return <MovieCardPage key={index} data={movie} />;
     });
   } else {
     renderMovies = (
@@ -26,7 +26,7 @@ const MovieListingPage = () => {
 
   if (series.Response === "True") {
     renderSeries = series.Search.map((movie, index) => {
-      return <MovieCard key={index} data={movie} />;
+      return <MovieCardPage key={index} data={movie} />;
     });
   } else {
     renderSeries = (

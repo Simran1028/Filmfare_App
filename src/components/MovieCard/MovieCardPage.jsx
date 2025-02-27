@@ -2,7 +2,7 @@ import React from "react";
 import "./MovieCard.scss";
 import { Link } from "react-router-dom";
 
-const MovieCard = (props) => {
+const MovieCardPage = (props) => {
   const { data } = props;
 
   return (
@@ -26,4 +26,4 @@ const MovieCard = (props) => {
   );
 };
 
-export default MovieCard;
+export default MovieCardPage;
