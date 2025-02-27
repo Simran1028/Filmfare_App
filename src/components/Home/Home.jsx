@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import MovieListing from "../MovieListing/movieListing";
+import MovieListing from "../movieListing/movieListing";
 import { useDispatch } from "react-redux";
 import {
   fetchAsyncMovies,
