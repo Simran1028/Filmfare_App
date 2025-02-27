@@ -1,4 +1,4 @@
-@import '../../../src/common/color.scss';
+@use "../../../src/common/color.scss" as *;
 
 .card-item{
     background: $secondary-color;
