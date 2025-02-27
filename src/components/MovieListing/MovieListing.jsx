@@ -6,7 +6,7 @@ import MovieCard from "../MovieCard/movieCard";
 import "./MovieListing.scss";
 import { settings } from "../../common/settings";
 
-const movieListing = () => {
+const MovieListing = () => {
   const movies = useSelector(getAllMovies);
   const series = useSelector(getAllSeries);
   let renderMovies,
@@ -57,4 +57,4 @@ const movieListing = () => {
   );
 };
 
-export default movieListing;
+export default MovieListing;
