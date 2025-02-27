@@ -5,13 +5,13 @@ import "./App.scss";
 import Home from "./../src/components/Home/Home";
 import MovieDetails from "./../src/components/MovieDetails/MovieDetails";
 import PageNotFound from "./../src/components/Page_Not_Found/PageNotFound";
-import Header from "./../src/components/Header/header";
+// import Header from "./../src/components/Header/header";
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Header />
+        {/* <Header /> */}
         <div className="container">
           <Routes>
             <Route path="/" element={<Home />} />
