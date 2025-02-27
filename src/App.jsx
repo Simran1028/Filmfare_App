@@ -3,16 +3,16 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.scss";
 import MovieDetails from "./../src/components/MovieDetails/MovieDetails";
 import PageNotFound from "./../src/components/Page_Not_Found/PageNotFound";
-import Header from "./../src/components/Header/header";
 import PageFooter from "./components/Footer/PageFooter";
 import PageHome from "./components/Home/PageHome";
+import HeaderPage from "./components/Header/HeaderPage";
 
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Header />
+        <HeaderPage />
         <div className="container">
           <Routes>
             <Route path="/" element={<PageHome />} />
