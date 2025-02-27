@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
-import MovieListing from "../MovieListing/MovieListing";
 import { useDispatch } from "react-redux";
 import {
   fetchAsyncMovies,
   fetchAsyncSeries,
 } from "../../features/movies/movieSlice";
+import MovieListingPage from "../MovieListing/MovieListingPage";
 
-const Home = () => {
+const PageHome = () => {
   const dispatch = useDispatch();
   const movieText = "Harry";
   const seriesText = "Friends";
@@ -19,9 +19,9 @@ const Home = () => {
     <>
       <div className="banner-img"></div>
 
-      <MovieListing />
+      <MovieListingPage />
     </>
   );
 };
 
-export default Home;
+export default PageHome;
