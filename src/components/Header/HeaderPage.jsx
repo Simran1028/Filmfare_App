@@ -24,7 +24,7 @@ const HeaderPage = () => {
     <>
       <div className="header">
         <div className="logo">
-          <Link to="/">Movie App </Link>
+          <Link to="/">FILMFARE </Link>
         </div>
         <div className="search-bar">
           <form onSubmit={submitHandler}>
@@ -40,14 +40,12 @@ const HeaderPage = () => {
             </button>
           </form>
         </div>
-        <div className="user-image">
+        {/* <div className="user-image">
           <img src={user} alt="User" />
-        </div>
+        </div> */}
       </div>
     </>
   );
 };
 
-
 export default HeaderPage;
-;
